@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+.header {
+    background-color: #0071BC;
+    color: white;
+    height: 10vh;
+    padding: 2vh;
+}
+
+.card {
+    margin: 1vw;
+}
+
+.bold {
+    font-weight: 700;;
+}

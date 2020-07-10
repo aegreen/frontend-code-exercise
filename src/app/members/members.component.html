@@ -1,0 +1,23 @@
+<div class="header bold">
+    <h2>Marketplace</h2>
+</div>
+
+<main>
+    <div class="container">
+        <h3 class="mt-5">Your household</h3>
+        <div class="row mt-4">
+            <div class="col">Welcome to The Marketplace! Review your household below:</div>
+        </div>
+        <div class="d-flex flex-wrap mt-4">
+            <div class="card d-inline-flex p-2" *ngFor="let member of members">
+                <div class="card-body">
+                    <h5 class="card-title bold">{{member.name}}</h5>
+                    <p class="card-text"><span class="bold">Description: </span>{{member.description}}<br />
+                    <span class="bold">Favorite fruit: </span>{{member.favoriteFruit}}</p>
+                </div>
+            </div>
+        </div>
+        <a class="button btn btn-primary mt-4" routerLink="/add-new-member">Add New Member</a>
+    </div>
+</main>
+
